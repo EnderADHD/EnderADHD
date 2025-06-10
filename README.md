@@ -4,9 +4,13 @@ I'm not the best at programming but I can get around.
 Programming languages proficiency
 
 HTML: proficient
+
 CSS: intermediate
+
 Javascript: Intermediate
+
 Lua: Dog could do better
+
 python: Proficient
 
 Thats it bye
