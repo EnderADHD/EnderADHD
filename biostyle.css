@@ -1,0 +1,63 @@
+html {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #4AF626;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #adabb1;
+  text-align: left;
+  padding: 8px;
+}
+
+a {
+  color: #99b288;
+  text-decoration: none;
+  text-decoration: underline;
+}
+footer {
+  background-color: #1b1e32;
+  color: #d0cccc;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+nav {
+  background-color: #1b1e32;
+  color: #ebffec;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ebffec;
+  text-decoration: none;
+  font-weight: bold;
+}
+a.wiki-link {
+  color: #4AF626;
+  text-decoration: none;
+  text-decoration: underline;
+}
