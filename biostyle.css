@@ -95,15 +95,11 @@ footer {
   border-top: 1px solid #144d05;
 }
 
-
-
-
 ::selection {
   background: #4AF626;
   color: #000000;
 }
 
-/* Special style for wiki links */
 a.wiki-link {
   color: #4AF626;
   text-decoration: none;
