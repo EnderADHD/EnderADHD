@@ -4,9 +4,32 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
+    <link id="dynamic-favicon" rel="icon" type="image/png" href="images/icon/earth/fdb2f60c-9f03-4ac3-99c8-604d27dbe6b2-0.png">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const frames = [];
+  const basePath = "images/icon/earth/fdb2f60c-9f03-4ac3-99c8-604d27dbe6b2-";
+  const totalFrames = 36; // 0 → 35
+
+  // preload all frames into array
+  for (let i = 0; i < totalFrames; i++) {
+    frames.push(`${basePath}${i}.png`);
+  }
+
+  let index = 0;
+  const favicon = document.getElementById("dynamic-favicon");
+
+  setInterval(() => {
+    favicon.href = frames[index];
+    index = (index + 1) % frames.length;
+  }, 100); // speed (100ms per frame ≈ 10fps)
+});
+</script>
+
 
     <script>
         var titles = [ "I'm so indecisive I couldn't pick a title ", 
@@ -195,25 +218,71 @@ function expressionRan() {
             audioElement.play();
         });
     </script>
-<!-- dropdown javascript -->
-    <script>
-          const btn = document.getElementById("dropdown-btn");
-  const list = document.getElementById("dropdown-list");
+<div class="windowproj">
+<div class="container">
+  <div class="top">
+    <span class="dot">0</span>
+    <span class="dot">~</span>
+    <span class="dot">0</span>
+  </div>
+<div class="content">
+    <p>Here are some projects I'm okay with :D</p>
+    <table style="width: 60%; margin: 0 auto; text-align: center;" class="projecttable">
+    <tr>
+        <th>Project</th>
+        <th>Preview</th>
+    </tr>
+    <tr>
+        <td>Jumpstyle</td>
+        <td>
+            <a href="./Jumpstyle/index.html" target="_blank">
+                <img class="project" src="./Jumpstyle/icon.png" alt="Jumpstyle Project" style="max-width: 100px;">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>Zipbomb</td>
+        <td>
+            <a href="./Zipbomb/index.html" target="_blank">
+                <img class="project" src="./Zipbomb/icon.jpg" alt="Zipbomb Project" style="max-width: 100px;">
+            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>Demonstration Website</td>
+        <td>
+            <a href="./Thing/index.html" target="_blank">
+                <img class="project" src="./Thing/icon.png" alt="Demonstration Project" style="max-width: 100px;">
+            </a>
+        </td>
+    </tr>
+            <tr>
+        <td>Psych <b>Epilepsy warning!!</b></td>
+        <td>
+            <a href="./psech/psych.html" target="_blank">
+                <img class="project" src="./psech/icon.png" alt="Psych" style="max-width: 100px;">
+            </a>
+        </td>
+    </tr>
+                <tr>
+        <td>Omori <b>Spoilers!</b></td>
+        <td>
+            <a href="./Omoriwebsite/index.html" target="_blank">
+                <img class="project" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt9CAXTbHN79Ze_NE5cjqvhyCLv7SWfVGhpw&s" alt="Omori" style="max-width: 100px;">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>Place</td>
+        <td>
+            <a href="./Place/index.html" target="_blank">
+                <img class="project" src="./Place/icon.png" alt="Place" style="max-width: 100px;">
+            </a>
+        </td>
+    </tr>
+</table>
+  </div>
+</div>
 
-  btn.addEventListener("click", () => {
-    if (list.style.display === "none" || list.style.display === "") {
-      list.style.display = "block";
-      btn.textContent = "▲";
-    } else {
-      list.style.display = "none";
-      btn.textContent = "▼";
-    }
-  });
-
-function hidestart() {
-  list.style.display = "none";  // <-- fixed
-}
-hidestart();
-    </script>
 </body>
 </html>
