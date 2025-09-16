@@ -7,6 +7,7 @@
     <link id="dynamic-favicon" rel="icon" type="image/png" href="images/icon/earth/fdb2f60c-9f03-4ac3-99c8-604d27dbe6b2-0.png">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='misc.css'>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
 <script>
@@ -218,6 +219,28 @@ function expressionRan() {
             audioElement.play();
         });
     </script>
+<!-- dropdown javascript -->
+    <script>
+          const btn = document.getElementById("dropdown-btn");
+  const list = document.getElementById("dropdown-list");
+
+  btn.addEventListener("click", () => {
+    if (list.style.display === "none" || list.style.display === "") {
+      list.style.display = "block";
+      btn.textContent = "▲";
+    } else {
+      list.style.display = "none";
+      btn.textContent = "▼";
+    }
+  });
+
+function hidestart() {
+  list.style.display = "none";  // <-- fixed
+}
+hidestart();
+    </script>
+
+
 <div class="windowproj">
 <div class="container">
   <div class="top">
@@ -281,8 +304,25 @@ function expressionRan() {
         </td>
     </tr>
 </table>
-  </div>
 </div>
+</div>
+<br>
+<div class="win98popup shadow" id="win98popup">
+      <div class="bar">
+        <p>Paint</p>
+        <button class="shadow" onclick="document.getElementById('win98popup').style.display = 'none';">
+          <svg xmlns="http://www.w3.org/2000/svg" width="8px" height="7px" viewBox="0 0 8 7" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M1 6V5h1V4h1V3h2v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1zm0-4V1H0V0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H2V2H1z"/></svg>
+          </button>
+      </div>
+      <section class="window98" id="windows98text">
+        <p>Go to a more interesting place?</p>
+      </section>
+      <div class="buttons">
+        <button class="shadow" onclick="window.open('interesting.html', '_blank');"><img src="https://raw.githubusercontent.com/mbledkowski/win98popup/master/outline.svg" alt="" width="66.9" height="15" class="win98"><p><u>Y</u>es</p></button>
+        <button class="shadow" onclick="document.getElementById('windows98text').textContent = ':(';"><img src="https://raw.githubusercontent.com/mbledkowski/win98popup/master/outline.svg" alt="" width="66.9" height="15" class="win98"><p><u>N</u>o</p></button>
+        <button class="shadow" onclick="document.getElementById('win98popup').style.display = 'none';"><img src="https://raw.githubusercontent.com/mbledkowski/win98popup/master/outline.svg" alt="" width="66.9" height="15" class="win98"><p>Cancel</p></button>
+      </div>
+    </div>
 
 </body>
 </html>
