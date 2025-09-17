@@ -6,9 +6,12 @@
     <title>Page Title</title>
     <link id="dynamic-favicon" rel="icon" type="image/png" href="images/icon/earth/fdb2f60c-9f03-4ac3-99c8-604d27dbe6b2-0.png">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='misc.css'>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
@@ -16,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const basePath = "images/icon/earth/fdb2f60c-9f03-4ac3-99c8-604d27dbe6b2-";
   const totalFrames = 36; // 0 → 35
 
-  // preload all frames into array
   for (let i = 0; i < totalFrames; i++) {
     frames.push(`${basePath}${i}.png`);
   }
@@ -27,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(() => {
     favicon.href = frames[index];
     index = (index + 1) % frames.length;
-  }, 100); // speed (100ms per frame ≈ 10fps)
+  }, 100)
 });
 </script>
 
@@ -235,7 +237,7 @@ function expressionRan() {
   });
 
 function hidestart() {
-  list.style.display = "none";  // <-- fixed
+  list.style.display = "none";
 }
 hidestart();
     </script>
@@ -323,6 +325,7 @@ hidestart();
         <button class="shadow" onclick="document.getElementById('win98popup').style.display = 'none';"><img src="https://raw.githubusercontent.com/mbledkowski/win98popup/master/outline.svg" alt="" width="66.9" height="15" class="win98"><p>Cancel</p></button>
       </div>
     </div>
-
+        <!--  add music -->
+        
 </body>
 </html>
