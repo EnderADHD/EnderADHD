@@ -153,6 +153,7 @@ h1 {
     border-radius: 6px;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    min-width: 180px;
 }
 
 
@@ -249,4 +250,9 @@ h1 {
   max-width: 700px;
 
   box-shadow: 0 6px 15px rgba(10, 10, 42, 0.295);
+}
+
+.mewo {
+    min-width: 300px;
+    min-height: 300px;
 }
