@@ -151,15 +151,15 @@ padding-top: 8px;
 }
 
 .volume-ctn {
-  position: absolute;   /* Float above everything */
-  top: 2px;             /* Distance from top of player */
-  right: 2px;           /* Distance from right edge */
-  z-index: 1000;        /* Above all other elements */
-  margin: 0;            /* Remove default spacing */
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  z-index: 1000;
+  margin: 0;
 }
 
 #volumeSlider {
   width: 60px;
   cursor: pointer;
-  margin: 0; /* Remove extra spacing */
+  margin: 0;
 }

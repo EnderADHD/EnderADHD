@@ -85,8 +85,8 @@
       duration:"08:45"
     },
     {
-      name:"Sleep-Thru Monday - Bomb the Music Industry!",
-      file:"Actualmusic/Sleep-Thru Monday.flac",
+      name:"Tell My Boss, 'I Hate You' - Bomb the Music Industry!",
+      file:"Actualmusic/Tell My Boss, 'I Hate You'.flac",
       duration:"02:25"
     },
   ]
