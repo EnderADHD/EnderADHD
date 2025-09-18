@@ -26,7 +26,6 @@
       inset -1px -1px #85898d;
   }
 
-
   .bar {
     display: flex;
     flex-flow: row nowrap;
@@ -38,6 +37,7 @@
     background: #00a;
     padding: 2px 3px 3px;
     margin: 3px 2px 1px 3px;
+    
     p {
       margin: 0;
     }
@@ -97,4 +97,25 @@
       
     }
   }
+}
+
+.win98popup.minimized {
+  height: auto;
+}
+
+
+.win98popup.minimized section,
+.win98popup.minimized .buttons {
+  display: none;
+}
+
+
+.window-controls {
+  display: flex;
+  gap: 2px;
+}
+
+#musicpopup iframe {
+  position: relative;
+  display: block;
 }
